@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+    <title>Synne Økland | Omega365 Academy</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="nav-bar" class="d-flex align-items-center justify-content-between px-4 py-3">
+        <div id="logo">
+            <a class="h3" href="index.html">Synne Økland</a>
+        </div>
+        <nav aria-label="main-menu" class="nav-links d-flex align-items-center gap-2">
+            <ul class="d-flex list-unstyled align-items-center m-0 gap-2">
+                <li><a href="#aboutme" class="active" aria-current="page">Om meg</a></li>
+                <li><a href="#aboutme" aria-current="page">Mitt arbeid</a></li>
+                <li><a href="#expertise" aria-current="page">Ekspertise</a></li>
+            </ul>
+            <a href="assets/MinCV.pdf" class="btn btn-sm btn-primary-custom" target="_blank">Last ned CV</a>
+        </nav>
+    </header>
+
+
+    <main id="changewatcher-page">
+
+      <section class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="hero-image" style="background: var(--purple-conic-gradient);">
+              <figure id="changewatcher_cover">
+                  <img src="assets/changewatcher_hero.png" alt="Bilde av changewatcher mockup" class="img-fluid">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <div class="container">
+          <div class="row mt-5">
+            <article class="article-main col-8">
+              <h1>En Figma-integrasjon for tverrfaglige team</h1>
+              <!-- <p class="fs-4">Figma</p> -->
+
+              <p class="mt-5">
+                Tenk deg å være en del av et tverrfaglig team på et stort prosjekt. Designeren overleverer Figma-filen, og det blir raskt vanskelig for utviklere 
+                å følge alle endringer. Dette var virkeligheten vi avdekket i vårt feltarbeid: utviklere brukte mye tid på å identifisere oppdateringer i det 
+                de beskrev som «rotete» Figma-filer med mange rammer, og uklarhet i prosessen førte til misforståelser og forsinkelser
+            <p>
+                Utgangspunktet for prosjektet vårt var en bred utforskning av hvordan et nordisk konsulentfirma kunne forbedre kommunikasjon og samarbeid
+                 i tverrfaglige team, med et spesielt fokus på hvordan digitale verktøy og kunstig intelligens kunne spille en rolle. Gjennom feltarbeidet, 
+                 som besto av intervjuer og observasjon, ble det imidlertid tydelig at denne problemstillingen var for vid.
+            </p>
+            <p>
+                For å utvikle en meningsfull løsning, spisset vi derfor fokuset mot de konkrete utfordringene som oppsto i overleveringsprosessen 
+                mellom designere og utviklere. Vår oppgave ble dermed å dykke ned i denne spesifikke arbeidsflyten for å identifisere rotårsakene 
+                til friksjonen og designe et konsept som kunne bygge bro mellom disiplinene og sikre en mer sømløs prosess.            
+            </p>
+            </article>
+
+
+            <div class="col-4">
+              <div class="details-wrapper">
+                <div class="details-summary collapsible">
+                  <p>Dette har jeg gjort</p>
+                  <div class="badge-wrapper">
+                    <div class="badge-list d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+                    <span class="custom-badge">Feltarbeid</span>  
+                    <span class="custom-badge">UI/UX</span>
+                    <span class="custom-badge">Prototyping</span>
+                    <span class="custom-badge">Brukertesting</span>
+                    <span class="custom-badge">Analyse</span>
+                  </div>
+
+                  <p class="mt-3">Teknologi</p>
+                      <div class="badge-list d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+                        <span class="custom-badge">Figma</span> 
+                        <span class="custom-badge">FigJam</span>
+                        <span class="custom-badge">Maze</span>
+                    </div>
+                  </div>
+                  <div class="badge-overlay"></div>
+                  <button class="btn btn-sm btn-secondary-custom toggle-collapse mt-3">
+                    <span class="btn-text">Vis mer</span>
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                </div>
+
+                
+
+                <div class="details-summary collapsible mt-4">
+                  <p>Oppsummering av AI</p>
+                  <div class="badge-wrapper">
+                    <ul>
+                      <li class="extra-small-text">Gjennom feltarbeid med intervjuer og observasjon avdekket vi at overleveringen fra design til utvikling var en stor
+                         utfordring. Utviklere slet med å spore endringer i det de beskrev som "rotete" Figma-filer, noe som førte til misforståelser, forsinkelser og 
+                         at designvisjonen ble mistolket.
+                      </li>
+                      <li class="extra-small-text">For å løse dette utviklet vi «Change Watcher», en funksjon designet for Figma gjennom en designsprint. Konseptet 
+                        gir en strukturert, kronologisk oversikt over designendringer, og inkluderer en AI-assistent som kan gi detaljerte tekniske forklaringer 
+                        for å bygge bro mellom disiplinene.
+                      </li>
+                      <li class="extra-small-text">En brukertest med 13 deltakere validerte konseptet: 90 % anså funksjonen som nyttig og suksessraten var på 80 %. 
+                        Den viktigste lærdommen var imidlertid at lignende funksjonalitet finnes i Figmas «DevMode», noe som understreker behovet for tydeligere
+                         differensiering av løsningen i fremtidig arbeid.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="badge-overlay"></div>
+                  <button class="btn btn-sm btn-secondary-custom toggle-collapse mt-3">
+                    <span class="btn-text">Vis mer</span>
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="section-container flex-column" data-color="var(--background-color)">
+          <p class="text-patch">HVORDAN KAN VI</p>
+          <div class="text-center px-5">
+            <h3 class="mt-3">Støtte en smidig overlevering fra design til utvikling?</h3>
+            <p>I feltarbeidet så vi at misforståelser og manglende oversikt var en gjenganger i tverrfaglige team. Design ble ofte mistolket 
+                eller oversett, og både designere og utviklere brukte mye tid på å avklare små detaljer. Dette førte til forsinkelser, 
+                frustrasjon og en teknisk implementering som ikke alltid gjenspeilet den opprinnelige designintensjonen.</p>
+            </div>
+        </section>
+
+        <section id="changewatcher-predesign" class="section-container mt-5" data-color="var(--background-color)">
+            <img src="/assets/changewatcher_issue.png" alt="Illustrasjon av problemet i samarbeidsprosessen i tverrfaglige team.">
+        </section>
+
+        <section id="changewatcher-process" class="section-container flex-column" data-color="var(--secondary-cWatcher)">
+            <p class="text-center text-patch">PROSESSEN</p>
+            <div class="container">
+              <div class="row mt-5">
+                <div class="col-6">
+                  <h3>En strukturert tilnærming fra innsikt til ferdig konsept</h3>
+                </div>
+                <div class="col-6">
+                  <p>
+                    <span class="fw-semibold">Vi startet med feltarbeid</span>
+                     der vi brukte kvalitative metoder, inkludert fem semistrukturerte intervjuer og observasjon for å få en dyp forståelse av arbeidsflyten og samarbeidskulturen i bedriften.
+                  </p>
+                  <p>
+                    <span class="fw-semibold">De innsamlede dataene ble analysert tematisk </span>
+                    for å identifisere gjentakende mønstre og kjerneområder for forbedring.
+                  </p>
+                  <p>
+                    <span class="fw-semibold">Basert på innsikten gjennomførte vi en designsprint </span>
+                     der vi definerte problemet, utviklet en brukerpersona og genererte ideer med metoder som «Crazy 8s». 
+                     Deretter laget vi storyboard og bygde en interaktiv prototype i Figma.
+                  <p>
+                    <span class="fw-semibold">Prototypen ble testet på 13 deltakere i Maze</span>
+                    der vi samlet både kvantitative og kvalitative tilbakemeldinger for å evaluere 
+                    funksjonalitet og brukervennlighet.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="section-container" data-color="var(--background-color)">
+            <div class="row">
+                <figure class="col-8">
+                    <img src="assets/changewatcher_designsprint.png">
+                </figure>
+                <figure class="col-4">
+                    <img src="assets/IMG_9480.jpg">
+                </figure>
+            </div>
+        </section>
+
+
+        <section class="section-container flex-column solution" data-color="var(--background-color)">
+          <div class="text-center">
+            <p class="text-patch">LØSNINGEN</p>
+          </div>
+          <div class="d-flex align-items-center">
+              <div class="text-center mt-3">
+                <h3 class="mt-3">En funksjon integrert direkte i Figma for å forbedre oversikten og kommunikasjonen rundt designendringer</h3>
+                 <p>Løsningen tar sikte på å forbedre arbeidsflyten mellom UX-designere og utviklere ved å tilby sanntidsvarsler om designendringer, 
+                    en strukturert oversikt over oppdateringer og en integrert AI-assistent som kan gi detaljerte forklaringer på endringene.
+                 </p>
+          </div>
+        </section>
+
+           
+        <section id="changewatcher-solution" class="container" data-color="var(--primary-cWatcher)">
+            <div class="col-12">
+                <!-- start: kode generert av AI -->
+              <div class="scroll-container">
+
+                <!-- Venstre side: Tekstene som endres når man scroller -->
+                <div class="scroll-text">
+                  <section data-screen="changewatcher_prototype.png">
+                    <h5>En dedikert "Changes"-fane</h5>
+                    <p>En ny fane ved siden av "Design" og "Prototype" gir direkte tilgang til alle endringer.</p>
+                  </section>
+
+                  <section data-screen="changewatcher_prototype1.png">
+                    <h5>Strukturert endringslogg</h5>
+                    <p>Få en kronologisk liste over alle designendringer, med informasjon om tidspunkt og en kort beskrivelse. 
+                        Brukere kan filtrere for å se endringer i alle rammer eller ... </p>
+                  </section>
+
+                  <section data-screen="changewatcher_prototype2.png">
+                    <p>fokusere på utvalgte rammer med vår "drag and drop" funksjon. Her kan man også se historikken for den
+                        spesifikke rammen.</p>
+                  </section>
+
+                  <section data-screen="changewatcher_prototype3.png">
+                    <h5>AI assistent for bedre forståelse</h5>
+                    <p>Denne funksjonen bygger bro mellom design og utvikling ved å gi dypere forklaringer på endringene. 
+                        Den kan levere tekniske detaljer som nøyaktige fargekoder eller alignments, og svare på andre spørsmål du måtte ha, 
+                        direkte i arbeidsflyten din. direkte i arbeidsflyten din.
+                    </p>
+                  </section>
+                </div>
+
+                <!-- Høyre side: iPhone mockup -->
+                <div class="scroll-mockup">
+                  <img id="mockup" src="assets/changewatcher_prototype.png" alt="App skjerm">
+                </div>
+              </div> 
+              <!-- slutt: kode generert av -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="changewatcher-process" class="section-container flex-column" data-color="var(--secondary-changewatcher)">
+        <p class="text-center text-patch">RESULTATET</p>
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-6 px-4">
+              <h3>Brukernes dom: Change Watcher validerer behovet, men avdekker uventet konkurranse og forbedringsmuligheter</h3>
+            </div>
+                <div class="col-6">
+                <p>
+                    Brukertestingen bekreftet at Change Watcher har et betydelig potensial, ettersom konseptet adresserer et reelt
+                    behov for bedre oversikt og kommunikasjon mellom design og utvikling. Hele 90 % av deltakerne anså funksjonen 
+                    som nyttig for team med ulike fagpersoner. Samtidig avdekket evalueringen et klart behov for å forbedre brukervennligheten og 
+                    tydeliggjøre konseptets <span class="fw-semibold">unike verdi</span> sammenlignet med eksisterende funksjoner i Figma. 
+                </p>
+            </div>
+          </div>
+        </div>
+     </section>
+
+    </main>
+    
+    <footer class="text-center py-4 mt-5">
+      <p>&copy; 2025 Synne Økland.</p>
+    </footer>
+
+  </body>
+
+  <script src="main.js"></script>
+</html>

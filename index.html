@@ -29,7 +29,7 @@
         </nav>
     </header>
 
-    <main class="app-container">
+    <main id="main-page">
         <!-- Hero -->
         <section id="hero-main" class="section-container">
             <div class="row align-items-center">
@@ -39,9 +39,9 @@
                     <h2 class="fw-light fs-5">Med nysgjerrighet for både design og utvikling, liker jeg å utforske <br>
                      skjæringspunktet mellom funksjonalitet og brukeropplevelse.</h5>
                     <div id="icon-links" class="d-flex align-items-center justify-content-center gap-2">
-                        <i class="bi bi-envelope-open-fill" aria-hidden="true"></i>
-                        <i class="bi bi-file-person-fill" aria-hidden="true"></i>
-                        <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        <a href="mailto:synne.okland@gmail.com"><i class="bi bi-envelope-open-fill" aria-hidden="true"></i></a> 
+                        <a href="assets/MinCV.pdf" target="_blank"><i class="bi bi-file-person-fill" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/synne-økland-1a6081264/?originalSubdomain=no" target="_blank"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -97,9 +97,9 @@
                             <a href="myeachtrax.html" class="fw-lighter" target="_blank">Les mer om prosessen her</a>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <figure id="myeachtrax-image" class="text-center">
+                            <a id="myeachtrax-image" class="text-center" href="myeachtrax.html" target="_blank">
                                 <img src="assets/MyEachtrax_cover.png" alt="Cover av prosjektet MyEachtraX" class="img-fluid image-hover">
-                            </figure>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -109,9 +109,9 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                            <figure id="omega-image" class="text-center">
+                            <a id="omega-image" class="text-center" href="academy.html" target="_blank">
                                 <img src="assets/Academy.png" alt="Cover av prosjektet til Omega365 Academy" class="img-fluid image-hover">
-                            </figure>
+                            </a>
                         </div>
                         <div class="project-description col-12 col-lg-6">
                             <div class="expertise-badges d-flex gap-2 py-2">
@@ -119,12 +119,40 @@
                                 <span class="custom-badge">Full stack</span>
                             </div>
                             <h3>En læringsplattform for å støtte onboarding</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet urna id erat aliquet scelerisque. Integer convallis, ligula in tincidunt fermentum, ex sapien blandit metus, nec vulputate libero mauris id purus. Aliquam erat volutpat. Quisque vitae lectus nec risus consequat efficitur. Phasellus eget purus ut neque fermentum volutpat. Vivamus auctor nisl sit amet sapien lacinia, non feugiat turpis laoreet. Donec sit amet sapien vel justo posuere.</p>
+                            <p>Omega 365 Academy er Omegas digitale læringsplattform, utviklet for å gjøre kunnskap mer tilgjengelig, engasjerende og inspirerende. 
+                                I dette prosjektet fikk jeg i oppgave å redesigne og utvikle en ny nettside som satte brukeren i sentrum. Målet var å modernisere 
+                                grensesnittet, forbedre navigasjonen og skape en mer intuitiv struktur som gjør det enkelt å finne kurs, artikler og videoer. 
+                                Resultatet ble en moderne, responsiv og visuelt tiltalende løsning som styrker læringsopplevelsen og fremhever Omega 365s merkevare.</p>
                             <a href="academy.html" class="fw-lighter" target="_blank">Les mer om prosessen her</a>
                         </div>
                     </div>
                 </div>
             </section>
+            <section id="project-3" class="section-container" data-color="var(--purple)">
+                <div class="container">
+                    <div class="row">
+                        <div class="project-description col-12 col-lg-6">
+                            <div class="expertise-badges d-flex gap-2 py-2">
+                                <span class="custom-badge">UX/UI</span>
+                                <span class="custom-badge">Feltarbeid</span>
+                            </div>
+                            <h3>Fra design-kaos til sømløs overlevering i Figma</h3>
+                            <p>Feltarbeidet vårt hos et nordisk konsulentfirma identifiserte en kritisk flaskehals i overleveringen fra design til utvikling, 
+                                hvor utviklere slet med det de beskrev som «rotete» Figma-filer og designeres visjoner ofte ble mistolket.
+                                For å løse dette utviklet vi «Change Watcher»: en konseptuell Figma-funksjon som gir en strukturert oversikt over designendringer
+                                 og bruker en AI-assistent for å gi dypere, tekniske forklaringer.</p>
+                            <a href="changeWatcher.html" class="fw-lighter" target="_blank">Les mer om prosessen her</a>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <a id="changewatcher-cover" class="text-center" href="changeWatcher.html" target="_blank">
+                                <img src="assets/ChangeWatcher_cover.jpg" alt="Cover av prosjektet Change Watcher" class="img-fluid image-hover"
+                                style="border-radius:8px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
 
         <section id="expertise" class="section-container">
@@ -138,14 +166,13 @@
                 <!-- Metoder -->
                 <div class="row align-items-center py-3">
                     <div class="col-12 col-md-2">
-                        <h6 class="expertise-type text-center text-md-start">Metoder</h6>
+                        <h6 class="expertise-type text-center text-md-start">Design</h6>
                     </div>
                     <div class="col-12 col-md-10">
                         <div class="expertise-attributes d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
                             <span class="custom-badge">Brukerundersøkelser</span>
                             <span class="custom-badge">Brukertesting</span>
                             <span class="custom-badge">Prototyping</span>
-                            <span class="custom-badge">Informasjonsarkitektur</span>
                             <span class="custom-badge">Interaksjonsdesign</span>
                             <span class="custom-badge">Universell utforming</span>
                         </div>
@@ -153,25 +180,37 @@
                 </div>
                 <hr>
 
-                <!-- Hard skills -->
                 <div class="row align-items-center py-3">
                     <div class="col-12 col-md-2">
-                        <h6 class="expertise-type text-center text-md-start">Hard skills</h6>
+                        <h6 class="expertise-type text-center text-md-start">Teknologi</h6>
+                    </div>
+                    <div class="col-12 col-md-10">
+                        <div class="expertise-attributes d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+                            <span class="custom-badge">HTML/CSS</span>
+                            <span class="custom-badge">Javascript</span>
+                            <span class="custom-badge">Java</span>
+                            <span class="custom-badge">Python</span>
+                            <span class="custom-badge">C#</span>
+                            <span class="custom-badge">SQL</span>
+                            <span class="custom-badge">Vue</span>
+                            <span class="custom-badge">Bootstrap</span>
+                            <span class="custom-badge">Responsivt design</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row align-items-center py-3">
+                    <div class="col-12 col-md-2">
+                        <h6 class="expertise-type text-center text-md-start">Verktøy</h6>
                     </div>
                     <div class="col-12 col-md-10">
                         <div class="expertise-attributes d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
                             <span class="custom-badge">Figma</span>
                             <span class="custom-badge">Figjam</span>
+                            <span class="custom-badge">Miro</span>
                             <span class="custom-badge">Notion</span>
-                            <span class="custom-badge">HTML/CSS</span>
-                            <span class="custom-badge">Javascript</span>
-                            <span class="custom-badge">Java</span>
-                            <span class="custom-badge">Python</span>
-                            <span class="custom-badge">Bootstrap</span>
-                            <span class="custom-badge">Vue</span>
-                            <span class="custom-badge">SQL</span>
                             <span class="custom-badge">GitHub</span>
-                            <span class="custom-badge">Responsivt design</span>
                         </div>
                     </div>
                 </div>
@@ -186,10 +225,10 @@
                         <div class="expertise-attributes d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
                             <span class="custom-badge">Strukturert</span>
                             <span class="custom-badge">Visuell sans</span>
-                            <span class="custom-badge">Kreativ</span>
+                            <span class="custom-badge">Kreativ problemløser</span>
                             <span class="custom-badge">Lærevillig</span>
-                            <span class="custom-badge">Samarbeid</span>
-                            <span class="custom-badge">Logisk tenking</span>
+                            <span class="custom-badge">Logisk tenkende</span>
+                            <span class="custom-badge">Tilpasningsdyktig</span>
                             <span class="custom-badge">Detaljorientert</span>
                         </div>
                     </div>
@@ -198,13 +237,32 @@
             </div>
         </section>
 
+        <footer class="text-center py-4 mt-5 extra-small-text" style="background-color:var(--accent);height:40vh">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-around gap-5 mt-5">
+                        <div class="d-flex flex-column align-items-start">
+                            <p>KONTAKT MEG</p>
+                            <a href="tel:+4790672564"><p>+47 906 72 564</p></a>
+                            <a href="mailto:synne.okland@gmail.com"><p>synne.okland@gmail.com</p></a>
+                        </div>
+                        <div class="d-flex flex-column align-items-start">
+                            <p class="extra-small">SOSIALE MEDIER</p>
+                            <a href="https://www.instagram.com/synneokl/">
+                                <p><i class="bi bi-instagram"></i> Instagram</p>
+                            </a>
+                            <a href="https://www.instagram.com/synneokl/">
+                                <p><i class="bi bi-linkedin"></i> Linkedin</p>
+                            </a>
+                            <a href="https://www.instagram.com/synneokl/">
+                                <p><i class="bi bi-github"></i> GitHub</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </main>
-
-    <footer class="text-center py-4 mt-5">
-      <p>&copy; 2025 Synne Økland.</p>
-    </footer>
-
-    <script src="main.js"></script>
-
-
+<script src="main.js"></script>
 </body>

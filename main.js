@@ -1,3 +1,4 @@
+// scroll to expand
 document.addEventListener('scroll', () => {
   const element = document.getElementById('teaser-card');
   if (!element) return;
@@ -15,14 +16,13 @@ document.addEventListener('scroll', () => {
 
 
 
-
+// section/container colors
 const teaserCard = document.getElementById('teaser-card');
-const myeachtraxapp = document.getElementById('myeachtrax-app');
-const academyapp = document.getElementById('academy-app');
+const myeachtraxpage = document.getElementById('myeachtrax-page');
+const academypage = document.getElementById('academy-page');
+const changewatcherpage = document.getElementById('changewatcher-page');
+const targets = [teaserCard, myeachtraxpage, academypage, changewatcherpage].filter(Boolean);
 
-const targets = [teaserCard, myeachtraxapp, academyapp].filter(Boolean);
-
-// Her tar vi både sections og containers
 const sectionsAndContainers = document.querySelectorAll('.section-container, .container');
 
 const defaultColor = getComputedStyle(document.documentElement)
@@ -53,21 +53,37 @@ sectionsAndContainers.forEach(el => observer.observe(el));
 
 //scroll container
 
-const phoneScreen = document.getElementById("phone-screen");
+const mockup = document.getElementById("mockup");
 const section = document.querySelectorAll(".scroll-text section");
 
+let currentScreen = mockup.src; // Holder styr på nåværende bilde
+
 window.addEventListener("scroll", () => {
-  section.forEach(section => {
-    const rect = section.getBoundingClientRect();
+  section.forEach(sec => {
+    const rect = sec.getBoundingClientRect();
     if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-      phoneScreen.src = "assets/" + section.dataset.screen;
+      const newSrc = "assets/" + sec.dataset.screen;
+
+      if (currentScreen !== newSrc) {
+        currentScreen = newSrc;
+
+        // Fade ut
+        mockup.classList.add("fade-out");
+
+        // Vent litt, bytt bilde, fade inn
+        setTimeout(() => {
+          mockup.src = newSrc;
+          mockup.classList.remove("fade-out");
+        }, 400); // matcher transition-duration
+      }
     }
   });
 });
 
 
 
-//toggle button
+
+//toggle button for details container
 const toggleButtons = document.querySelectorAll('.toggle-collapse');
 
 toggleButtons.forEach(btn => {
@@ -89,27 +105,3 @@ toggleButtons.forEach(btn => {
     }
   });
 });
-
-
-
-
-
-
-/* const myeachtrax_app = document.getElementById('myeachtrax-appcontainer');
-const myeachtrax_sections = document.querySelectorAll('.section-container');
-
-const obser = new IntersectionObserver(
-  (entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const color = entry.target.dataset.color;
-        myeachtrax_app.style.backgroundColor = color; // Endrer fargen på teaser-card
-      }
-    });
-  },
-  {
-    threshold: 0.5 // Hvor mye av section må være synlig før den trigger
-  }
-);
-
-myeachtrax_sections.forEach(section => obser.observe(section)); */
