@@ -62,7 +62,7 @@ window.addEventListener("scroll", () => {
   section.forEach(sec => {
     const rect = sec.getBoundingClientRect();
     if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-      const newSrc = "assets/" + sec.dataset.screen;
+      const newSrc = "assets/projects/" + sec.dataset.screen;
 
       if (currentScreen !== newSrc) {
         currentScreen = newSrc;
