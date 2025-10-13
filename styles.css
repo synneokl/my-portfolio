@@ -1,61 +1,87 @@
-/* =========================
-   Variables
-========================= */
+/* ===================================
+   🌿 Design Tokens
+=================================== */
 :root {
-  /* base colors */
-  --coal: #0c0908;
-  --blue: #c1ddf6;
-  --purple: #B5B9ED;
-  --dark-purple: #2330CE;
-  --pink: #ffbfe0;
-  --yellow: #dffd95;
-  --green: #80AEA1;
-  --dark-green: #276151;
-  --turqouise: #edffff;
-  --red: #FAB4AD;
-  --neutral-beige: #e3e2d9;
-  --light-beige: #faf9f7;
-  --pink-linear-gradient: linear-gradient(183deg, var(--light-beige, #faf9f7) 4.06%, var(--secondary-pink, #FFBFE0) 154.3%);
-  --pink-conic-gradient: conic-gradient(from 192deg at 50% 56.55%, var(--accent, #FFBFE0) 20.769230872392654deg, var(--light-beige, #faf9f7) 118.80000472068787deg, var(--accent, #FFBFE0) 200.76922416687012deg, var(--light-beige, #faf9f7) 276.9230818748474deg, var(--accent, #FFBFE0) 360deg);
-  --blue-conic-gradient: conic-gradient(from 192deg at 50% 56.55%, var(--primary-blue, #CAD9FF) 20.769230872392654deg, var(--light-beige, #faf9f7) 118.80000472068787deg, var(--primary-blue, #CAD9FF) 200.76922416687012deg, var(--light-beige, #faf9f7) 276.9230818748474deg, var(--primary-blue, #CAD9FF) 360deg);
-  --turqouise-conic-gradient: conic-gradient(from 192deg at 50% 56.55%, #AFE2E2 20.769230872392654deg, #FAFFFF 118.80000472068787deg, #AFE2E2 200.76922416687012deg, #F8FFFF 276.9230818748474deg, #AFE2E2 342.6563000679016deg);
-  --red-conic-gradient: conic-gradient(from 192deg at 50% 56.55%, #FAB4AD 20.769230872392654deg, var(--Light-beige, #F4F4EF) 118.80000472068787deg, #FAB4AD 200.76922416687012deg, var(--Light-beige, #F4F4EF) 276.9230818748474deg, #FAB4AD 360deg);
-  --purple-conic-gradient: conic-gradient(from 192deg at 50% 56.55%, #B5B9ED 20.769230872392654deg, var(--Light-beige, #F4F4EF) 118.80000472068787deg, #B5B9ED 200.76922416687012deg, var(--Light-beige, #F4F4EF) 276.9230818748474deg, #B5B9ED 360deg);
+  /* === Base Colors === */
+  --color-coal: #0c0908;
+  --color-blue: #c1ddf6;
+  --color-purple: #b5b9ed;
+  --color-dark-purple: #2330ce;
+  --color-pink: #ffbfe0;
+  --color-yellow: #dffd95;
+  --color-green: #80aea1;
+  --color-dark-green: #276151;
+  --color-turquoise: #edffff;
+  --color-red: #fab4ad;
+  --color-beige-neutral: #e3e2d9;
+  --color-beige-light: #faf9f7;
 
-  /* main colors */
-  --primary-main: var(--neutral-beige);
-  --secondary-main: var(--blue);
-  --accent: var(--pink);
-  --extra-accent: var(--yellow);
+  /* === Gradients === */
+  --gradient-pink-linear: linear-gradient(183deg, var(--color-beige-light) 4%, var(--color-pink) 154%);
+  --gradient-green-linear: linear-gradient(227deg, #52917F 5.23%, #7DAD9F 32.52%, #B7D3CB 50.37%, #9AC0B5 66.77%, #52917F 90.29%);
+  --gradient-pink-conic: conic-gradient(from 192deg at 50% 56.55%, var(--color-pink) 20deg, var(--color-beige-light) 118deg, var(--color-pink) 200deg, var(--color-beige-light) 276deg, var(--color-pink) 360deg);
+  --gradient-blue-conic: conic-gradient(from 192deg at 50% 56.55%, var(--color-blue) 20deg, var(--color-beige-light) 118deg, var(--color-blue) 200deg, var(--color-beige-light) 276deg, var(--color-blue) 360deg);
+  --gradient-turqouise-conic: conic-gradient(from 192deg at 50% 56.55%, #AFE2E2 20.769230872392654deg, #FAFFFF 118.80000472068787deg, #AFE2E2 200.76922416687012deg, #F8FFFF 276.9230818748474deg, #AFE2E2 342.6563000679016deg);
+  --gradient-red-conic: conic-gradient(from 192deg at 50% 56.55%, #FAB4AD 20.769230872392654deg, var(--Light-beige, #F4F4EF) 118.80000472068787deg, #FAB4AD 200.76922416687012deg, var(--Light-beige, #F4F4EF) 276.9230818748474deg, #FAB4AD 360deg);
+  --gradient-purple-conic: conic-gradient(from 192deg at 50% 56.55%, #B5B9ED 20.769230872392654deg, var(--Light-beige, #F4F4EF) 118.80000472068787deg, #B5B9ED 200.76922416687012deg, var(--Light-beige, #F4F4EF) 276.9230818748474deg, #B5B9ED 360deg);
 
-  /* project colors */
-  --primary-myeachtrax: var(--green);
-  --secondary-myeachtrax: var(--purple);
+  /* === Global Theme Colors === */
+  --background-color: var(--color-beige-light);
 
-  --primary-academy: var(--blue);
-  --secondary-academy: var(--turqouise);
+  --theme-primary: var(--color-beige-neutral);
+  --theme-secondary: var(--color-blue);
+  --theme-accent: var(--color-pink);
+  --theme-accent-extra: var(--color-yellow);
 
-  --primary-cWatcher: var(--purple);
-  --secondary-cWatcher: var(--red);
+  /* === Project Themes === */
+  /* MyEachTrax */
+  --myeachtrax-primary: var(--color-green);
+  --myeachtrax-secondary: var(--color-purple);
 
-  /* base-colors */
-  --background-color: var(--light-beige);
-  --heading-color: var(--coal);
-  --text-color: var(--coal);
+  /* Academy */
+  --academy-primary: var(--color-blue);
+  --academy-secondary: var(--color-turquoise);
 
-  /* sizes */
+  /* ChangeWatcher */
+  --changewatcher-primary: var(--color-purple);
+  --changewatcher-secondary: var(--color-red);
+
+
+  /* === Typography === */
+  --font-family-base: "Source Sans Pro", sans-serif;
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.25rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 3.5rem;
+  --line-height-base: 1.6;
+
+  /* === Layout === */
   --max-width: 1200px;
   --border-radius: 8px;
-  --transition-speed: 0.6s;
+  --transition-speed: 0.3s;
+
+  /* === Spacing === */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* === Breakpoints === */
+  --bp-sm: 600px;
+  --bp-md: 768px;
+  --bp-lg: 992px;
+  --bp-xl: 1200px;
 }
 
-/* =========================
-   Base styles
-========================= */
+/* ===================================
+     Base Styles
+=================================== */
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  color: var(--text-color);
-  line-height: 1.6;
+  font-family: var(--font-family-base);
+  color: var(--color-coal);
+  line-height: var(--line-height-base);
   margin: 0;
   background-color: var(--background-color);
 }
@@ -65,135 +91,144 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--heading-color);
-  margin-top: 0.5rem !important;
-  margin-bottom: 1rem !important;
+  color: var(--color-coal);
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
 }
 
 h1 {
-  font-weight: normal !important;
-  font-size: 3.5rem !important;
+  font-weight: normal;
+  font-size: var(--font-size-xl);
 }
 
 h2 {
-  line-height: 2rem !important;
-}
-
-p {
-  margin-bottom: 1rem !important;
+  font-size: var(--font-size-lg);
   line-height: 2rem;
 }
 
+p {
+  margin-bottom: var(--space-md);
+  line-height: 2rem;
+}
 
 a {
-  color: var(--coal) !important;
-  text-decoration: none !important;
+  color: var(--color-coal) !important;
+  text-decoration: none  !important;
+  transition: color var(--transition-speed);
 }
 
 a:hover {
-  color: var(--text-color) !important;
+  color: var(--theme-accent);
   text-decoration: underline !important;
 }
 
 hr {
-  color: var(--neutral-beige);
+  border: 1px solid var(--color-beige-neutral);
 }
 
-.text-patch {
-  color: var(--dark-purple);
+.text-highlight {
+  color: var(--color-dark-purple);
   font-weight: 600;
 }
 
-.extra-small-text {
-  font-size: 14px;
+
+.text-xs {
+  font-size: var(--font-size-xs);
 }
 
-/* =========================
+/* ===================================
    Images
-========================= */
-
+=================================== */
 img {
   width: 100%;
-  height: 60vh;  
-  object-fit: contain; 
+  height: 60vh;
+  object-fit: contain;
+  border-radius: var(--border-radius);
 }
 
 .image-hover {
-    transition: transform 0.3s ease; /* gjør animasjonen myk */
+  transition: transform var(--transition-speed);
 }
 
 .image-hover:hover {
-    transform: scale(1.05); /* gjør bildet 5% større */
-    cursor: pointer;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
-/* =========================
+/* ===================================
    Layout
-========================= */
-
+=================================== */
 .section-container {
   max-width: var(--max-width);
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  padding: 6rem 1rem;
+  padding: var(--space-xl) var(--space-md);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 
-/* =========================
+
+/* ===================================
    Components
-========================= */
-/* Badges */
+=================================== */
+
+/* --- Badges --- */
 .custom-badge {
   display: flex;
-  padding: 6px 12px;
+  padding: var(--space-xs) var(--space-sm);
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  background-color: var(--neutral-beige);
-  color: var(--text-color) !important;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: var(--font-size-xs);
   line-height: 16px;
 }
 
-/* Buttons */
-.btn-primary-custom {
-  background-color: var(--accent) !important;
-  color: var(--coal) !important;
-  border: none !important;
-  padding: 4px 8px !important;
+.badge-light {
+  background-color: var(--color-beige-light);
+  color: var(--color-coal);
+}
+
+.badge-dark {
+  background-color: var(--color-beige-neutral);
+  color: var(--color-coal);
+}
+
+
+/* --- Buttons --- */
+.btn {
+  border: none;
+  padding: var(--space-xs) var(--space-sm);
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
-.btn-primary-custom:hover {
-  background-color: var(--coal) !important;
-  color: var(--light-beige) !important;
+.btn--primary {
+  background-color: var(--theme-accent-extra) !important;
+  color: var(--color-coal) !important;
 }
 
-.btn-secondary-custom {
-  background-color: var(--light-beige) !important;
-  color: var(--coal) !important;
-  border: none !important;
-  padding: 4px 8px !important;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+.btn--primary:hover {
+  background-color: var(--color-coal) !important;
+  color: var(--color-beige-light) !important;
 }
 
-.btn-secondary-custom:hover {
-  background-color: var(--accent) !important;
-  color: var(--text-color) !important;
+.btn--secondary {
+  background-color: var(--color-beige-light) !important;
+  color: var(--color-coal) !important;
 }
 
-/* =========================
+.btn--secondary:hover {
+  background-color: var(--theme-accent) !important;
+  color: var(--color-coal) !important;
+}
+
+/* ===================================
    Navbar
-========================= */
-
-/* Navbar */
+=================================== */
 #nav-bar {
   position: sticky;
   top: 0;
@@ -201,18 +236,19 @@ img {
   height: 70px;
   width: 100%;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-md);
 }
 
 #nav-bar a {
-  padding: 5px 10px;
-  color: var(--coal);
-  text-decoration: none;
+  padding: var(--space-xs) var(--space-sm);
   border-radius: 4px;
-  background-color: transparent;
 }
 
 #nav-bar a:hover {
-  background-color: var(--neutral-beige);
+  background-color: var(--color-beige-neutral);
   text-decoration: underline;
 }
 
@@ -222,25 +258,21 @@ img {
   cursor: pointer;
 }
 
-
-/* =========================
-    Main Page
-========================= */
-
-/* Hero Section */
+/* ===================================
+   Main Page
+=================================== */
 #hero-main {
   height: 80vh;
   max-width: var(--max-width);
-  width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 #icon-links i:hover {
-  color: var(--accent)
+  color: var(--theme-accent);
 }
 
-/* Teaser Card */
+/* --- Teaser Card --- */
 #teaser-card {
   --expand-progress: 0;
   position: relative;
@@ -248,36 +280,31 @@ img {
   margin: 0 auto;
   padding-top: 300px;
   width: calc(80% + (20% * var(--expand-progress)));
-  background-color: var(--neutral-beige);
+  background-color: var(--color-beige-neutral);
   border-radius: calc(12px * (1 - var(--expand-progress)));
-  box-shadow: 4px 8px 30px rgba(0,0,0,calc(0.25 * (1 - var(--expand-progress))));
+  box-shadow: 4px 8px 30px rgba(0, 0, 0, calc(0.25 * (1 - var(--expand-progress))));
   overflow: hidden;
   transition: width 0.3s linear, height 0.1s linear, background-color 0.5s ease;
-  z-index: 1;
 }
 
 #teaser-card.expanded {
   position: sticky;
   top: 0;
   width: 100%;
-  height: auto;
   border-radius: 0;
   box-shadow: none;
 }
 
-/* Aboutme Section */
-#aboutme-description {
-  padding: 0; /* mobile-first */
-}
-
-/* Project Section */
+/* --- Sections --- */
+#aboutme-description,
 .project-description {
-  padding: 0; /* mobile-first */
+  padding: 0;
 }
 
-/* Expertise Section */
-#expertise-section h6, .row {
-  margin-bottom: 0px !important;
+/* --- Expertise --- */
+#expertise-section h6,
+.row {
+  margin-bottom: 0;
 }
 
 .expertise-type {
@@ -285,22 +312,13 @@ img {
   margin-bottom: 0.1rem;
 }
 
-.footer-image {
-  border-radius: var(--border-radius) !important;
-}
-
-
-
-/* =========================
-    Projects Page
-========================= */
-
-/* hero */
+/* ===================================
+   Projects Pages
+=================================== */
 .hero-image {
   width: 100%;
-  max-height: 75vh;
   min-height: 75vh;
-  padding: 3rem;
+  padding: var(--space-lg);
   display: flex;
   border-radius: var(--border-radius);
   justify-content: center;
@@ -312,10 +330,7 @@ img {
   max-height: 60vh;
 }
 
-/* details */
-
-
-/* details container */
+/* Details */
 .details-wrapper {
   position: sticky;
   top: 70px;
@@ -323,13 +338,22 @@ img {
 }
 
 .details-summary {
-  background-color: var(--neutral-beige);
+  background-color: var(--color-beige-neutral);
   border-radius: var(--border-radius);
-  padding: 1rem;
+  padding: var(--space-md);
+  transition: max-height var(--transition-speed) ease;
 }
 
-.badge-wrapper {
+.details-summary.collapsible {
+  max-height: 20vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   position: relative;
+}
+
+.details-summary.collapsible.expanded {
+  max-height: 100vh;
 }
 
 .badge-overlay {
@@ -337,61 +361,26 @@ img {
   bottom: 0;
   width: 100%;
   height: 60%;
-  background: linear-gradient(to bottom, rgba(227, 226, 217, 0) 0%, var(--neutral-beige) 100%);
+  background: linear-gradient(to bottom, rgba(227, 226, 217, 0) 0%, var(--color-beige-neutral) 100%);
   pointer-events: none;
-}
-
-.details-summary .custom-badge {
-  background-color: var(--light-beige);
-}
-
-.details-summary.collapsible {
-  max-height: 20vh;      
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.details-summary.collapsible.expanded {
-  max-height: 100vh;     
-  background: var(--neutral-beige);
-}
-
-.details-summary.collapsible .badge-list,
-.details-summary.collapsible p {
-  flex: 1 1 auto;
 }
 
 .details-summary.collapsible.expanded .badge-overlay {
   display: none;
 }
 
-
 .details-summary.collapsible .toggle-collapse {
   position: sticky;
   bottom: 0;
   align-self: start;
   margin-top: 1rem;
-  background-color: var(--accent);
-  color: var(--coal);
+  background-color: var(--theme-accent);
+  color: var(--color-coal);
   z-index: 2;
   cursor: pointer;
   border: none;
 } 
 
-/* design views */
-
-.design-view {
-  max-height: 80vh !important;
-  border-radius: var(--border-radius);
-  /* background: conic-gradient(from 192deg at 50% 56.55%, #B5B9ED 20.769230872392654deg, var(--Light-beige, #F4F4EF) 118.80000472068787deg, #B5B9ED 200.76922416687012deg, var(--Light-beige, #F4F4EF) 276.9230818748474deg, #B5B9ED 360deg); */
-}
-
-.design-view img {
-  height: 50vh !important;  
-}
 
 
 /* scroll container */
@@ -419,50 +408,18 @@ img {
   top: 20vh; /* gjør at iPhone-skjermen "låser seg" */
 }
 
-/* Not working yet */
-/*
- =========================
-   Media Queries
-========================= 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.75rem;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-  }
-
-  p {
-    font-size: 0.95rem;
-  }
+/* ===================================
+   Responsive
+=================================== */
+@media (max-width: var(--bp-sm)) {
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.25rem; }
+  p { font-size: 0.95rem; }
 }
 
-@media (min-width: 768px) {
-  h1 {
-    font-size: 2.25rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  nav ul {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  #aboutme-description {
-    padding: 3rem;
-  }
-
-  .project-description {
-    padding: 3rem;
-  }
+@media (min-width: var(--bp-md)) {
+  #aboutme-description,
+  .project-description { padding: var(--space-lg); }
 
   #aboutme-section .d-flex {
     flex-direction: row;
@@ -470,20 +427,18 @@ img {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: var(--bp-lg)) {
   #hero-main {
     height: auto;
-    padding: 4rem 1rem;
+    padding: var(--space-lg) var(--space-md);
   }
 
-  .teaser-card {
+  #teaser-card {
     width: 95%;
     top: -20px;
   }
 
   .section-container {
-    padding: 2rem 1rem;
+    padding: var(--space-lg) var(--space-md);
   }
 }
-
-*/
